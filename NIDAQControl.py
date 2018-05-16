@@ -1,4 +1,5 @@
 from PyDAQmx import *
+from PyDAQmx.DAQmxTypes import *
 import numpy as np
 import time
 
@@ -36,7 +37,7 @@ class NIDAQControlClass(object):
         self.task.GetReadAvailSampPerChan(byref(available_data_number))
         if available_data_number.value >= number_to_read:
             read = int32(0)
-            data = np.zeros((self.buffer_size,), dtype=numpy.float64)
+            data = np.zeros((self.buffer_size,), dtype=np.float64)
             self.task.ReadAnalogF64(number_to_read, time_out, DAQmx_Val_GroupByChannel, data, self.buffer_size,
                                     byref(read), None)
             return data[:read.value], read.value

@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>2324</width>
-    <height>1401</height>
+    <width>1200</width>
+    <height>800</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -27,7 +27,7 @@
   </property>
   <layout class="QHBoxLayout" name="horizontalLayout_7">
    <item>
-    <layout class="QVBoxLayout" name="verticalLayout_3">
+    <layout class="QVBoxLayout" name="verticalLayout_4">
      <item>
       <widget class="QGroupBox" name="groupBox">
        <property name="sizePolicy">
@@ -307,7 +307,7 @@
        <property name="title">
         <string>Save Data</string>
        </property>
-       <layout class="QVBoxLayout" name="verticalLayout_4">
+       <layout class="QVBoxLayout" name="verticalLayout_3">
         <item>
          <layout class="QHBoxLayout" name="horizontalLayout_2">
           <item>
@@ -333,7 +333,7 @@
             </property>
             <property name="minimumSize">
              <size>
-              <width>500</width>
+              <width>200</width>
               <height>0</height>
              </size>
             </property>
@@ -486,10 +486,6 @@
     </widget>
    </item>
   </layout>
-  <zorder>ui_data_plot</zorder>
-  <zorder>groupBox_2</zorder>
-  <zorder>label</zorder>
-  <zorder>verticalSpacer_2</zorder>
  </widget>
  <customwidgets>
   <customwidget>
